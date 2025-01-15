@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KOU-PS - Pusat Informasi Growtopia Private Server</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- SweetAlert2 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.css" rel="stylesheet">
+    <!-- Font Awesome for Icons -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link href="assets/css/styles.css" rel="stylesheet">
+</head>
+<body class="bg-gray-900 text-white">
+    <!-- Splash Screen -->
+    <div id="splash-screen" class="fixed inset-0 flex items-center justify-center bg-black z-50">
+        <img src="assets/images/logo.png" alt="KOU-PS Logo" class="w-32 h-32 animate-pulse">
+    </div>
+
+    <!-- Homepage Content -->
+    <div class="hidden" id="main-content">
+        <!-- Header -->
+        <header class="bg-gray-800 fixed w-full z-40">
+            <div class="container mx-auto flex justify-between items-center p-6">
+                <div class="flex items-center space-x-2">
+                    <img src="assets/images/logo.png" alt="KOU-PS Logo" class="w-12 h-12">
+                    <span class="text-2xl font-bold text-green-500">KOU-PS</span>
+                </div>
+                <nav>
+                    <ul class="hidden md:flex space-x-6 text-lg">
+                        <li><a href="#home" class="hover:text-green-500">Home</a></li>
+                        <li><a href="#about" class="hover:text-green-500">About</a></li>
+                        <li><a href="#features" class="hover:text-green-500">Features</a></li>
+                        <li><a href="#faq" class="hover:text-green-500">FAQ</a></li>
+                        <li><a href="#download" class="hover:text-green-500">Download</a></li>
+                        <li><a href="server-status.html" class="hover:text-green-500">Server Status</a></li>
+                        <li><a href="marketplace.html" class="hover:text-green-500">Marketplace</a></li>
+                        <li><a href="contact-us.html" class="hover:text-green-500">Contact Us</a></li>
+                    </ul>
+                    <!-- Hamburger Menu -->
+                    <div class="md:hidden">
+                        <button id="hamburger" class="text-green-500 focus:outline-none">
+                            <i class="fas fa-bars fa-2x"></i>
+                        </button>
+                    </div>
+                </nav>
+            </div>
+            <!-- Mobile Menu -->
+            <div id="mobile-menu" class="hidden bg-gray-700">
+                <ul class="flex flex-col space-y-4 p-4 text-lg">
+                    <li><a href="#home" class="hover:text-green-500">Home</a></li>
+                    <li><a href="#about" class="hover:text-green-500">About</a></li>
+                    <li><a href="#features" class="hover:text-green-500">Features</a></li>
+                    <li><a href="#faq" class="hover:text-green-500">FAQ</a></li>
+                    <li><a href="#download" class="hover:text-green-500">Download</a></li>
+                    <li><a href="server-status.html" class="hover:text-green-500">Server Status</a></li>
+                    <li><a href="marketplace.html" class="hover:text-green-500">Marketplace</a></li>
+                    <li><a href="contact-us.html" class="hover:text-green-500">Contact Us</a></li>
+                </ul>
+            </div>
+        </header>
+
+        <!-- Hero Section -->
+        <section id="home" class="relative h-screen bg-cover bg-center" style="background-image: url('assets/images/hero-bg.png');">
+            <div class="absolute inset-0 bg-black opacity-60"></div>
+            <div class="container mx-auto h-full flex flex-col justify-center items-center relative z-10 text-center px-6 lg:px-12">
+                <h1 class="text-5xl md:text-6xl font-bold text-green-500 mb-4 animate-fadeInDown">KOU-PS</h1>
+                <p class="text-xl md:text-2xl text-gray-300 mb-8 animate-fadeInUp">Revived in 2025 with a New Spirit and Better Era</p>
+                <a href="#download" class="bg-green-500 hover:bg-green-600 text-white px-8 py-4 rounded-full text-lg transition duration-300 animate-pulse">
+                    Get Started
+                </a>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="py-20 px-6 lg:px-12">
+            <div class="container mx-auto flex flex-col md:flex-row items-center">
+                <div class="md:w-1/2 mb-8 md:mb-0">
+                    <img src="assets/images/about-image.png" alt="About KOU-PS" class="rounded-lg shadow-lg animate-slideInLeft w-full h-auto">
+                </div>
+                <div class="md:w-1/2 md:pl-12">
+                    <h2 class="text-3xl font-semibold text-green-500 mb-4">Tentang KOU-PS</h2>
+                    <p class="text-gray-300 mb-4">
+                        KOU-PS adalah private server Growtopia yang pertama kali diluncurkan pada tahun 2020 oleh @KOU. Meskipun sempat mati pada awal 2023, KOU-PS kini kembali hadir pada tahun 2025 dengan semangat yang baru dan fitur-fitur yang lebih baik. Bergabunglah dengan komunitas kami yang ramah dan nikmati pengalaman bermain Growtopia yang unik dan menyenangkan.
+                    </p>
+                    <ul class="list-disc list-inside text-gray-300 mb-4">
+                        <li>Fitur eksklusif dan unik</li>
+                        <li>Komunitas yang ramah dan aktif</li>
+                        <li>Dukungan penuh dari pemilik dan tim</li>
+                        <li>Pengalaman bermain yang stabil dan aman</li>
+                    </ul>
+                    <a href="#download" class="bg-green-500 hover:bg-green-600 text-white px-6 py-3 rounded transition duration-300">
+                        Join Now
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Features Section -->
+        <section id="features" class="bg-gray-800 py-20 px-6 lg:px-12">
+            <div class="container mx-auto">
+                <h2 class="text-3xl font-semibold text-green-500 text-center mb-12">Features</h2>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                    <!-- Feature 1 -->
+                    <div class="bg-gray-700 p-6 rounded-lg shadow-lg text-center animate-bounce">
+                        <i class="fas fa-shield-alt text-green-500 text-4xl mb-4"></i>
+                        <h3 class="text-xl font-semibold mb-2">Secure and Stable</h3>
+                        <p class="text-gray-300">Kami memastikan server kami aman dan stabil untuk pengalaman bermain yang tanpa gangguan.</p>
+                    </div>
+                    <!-- Feature 2 -->
+                    <div class="bg-gray-700 p-6 rounded-lg shadow-lg text-center animate-bounce">
+                        <i class="fas fa-users text-green-500 text-4xl mb-4"></i>
+                        <h3 class="text-xl font-semibold mb-2">Active Community</h3>
+                        <p class="text-gray-300">Bergabunglah dengan komunitas kami yang aktif dan ramah, tempat Anda bisa berteman dan berkolaborasi.</p>
+                    </div>
+                    <!-- Feature 3 -->
+                    <div class="bg-gray-700 p-6 rounded-lg shadow-lg text-center animate-bounce">
+                        <i class="fas fa-cogs text-green-500 text-4xl mb-4"></i>
+                        <h3 class="text-xl font-semibold mb-2">Exclusive Features</h3>
+                        <p class="text-gray-300">Nikmati berbagai fitur eksklusif yang tidak tersedia di server lain.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ Section -->
+            <section id="faq" class="py-20 px-6 lg:px-12">
+                <div class="container mx-auto">
+                    <h2 class="text-3xl font-semibold text-green-500 text-center mb-12">FAQ</h2>
+                    <div class="max-w-2xl mx-auto space-y-4">
+                        <!-- FAQ Item 1 -->
+                        <div class="bg-gray-700 rounded-lg shadow-lg">
+                            <button class="w-full flex justify-between items-center p-6 focus:outline-none faq-question">
+                                <span class="text-xl font-medium text-green-400">Apa itu KOU-PS?</span>
+                                <i class="fas fa-chevron-down text-green-500 transition-transform duration-300"></i>
+                            </button>
+                            <div class="faq-answer p-6 hidden">
+                                <p class="text-gray-300">
+                                    KOU-PS adalah Growtopia private server yang menawarkan berbagai fitur tambahan dan pengalaman bermain yang lebih seru dibandingkan server resmi.
+                                </p>
+                            </div>
+                        </div>
+                        <!-- FAQ Item 2 -->
+                        <div class="bg-gray-700 rounded-lg shadow-lg">
+                            <button class="w-full flex justify-between items-center p-6 focus:outline-none faq-question">
+                                <span class="text-xl font-medium text-green-400">Bagaimana cara bergabung?</span>
+                                <i class="fas fa-chevron-down text-green-500 transition-transform duration-300"></i>
+                            </button>
+                            <div class="faq-answer p-6 hidden">
+                                <p class="text-gray-300">
+                                    Anda dapat mengunduh client melalui halaman Download dan mengikuti panduan instalasi yang tersedia. Setelah itu, Anda dapat masuk ke server menggunakan IP yang disediakan.
+                                </p>
+                            </div>
+                        </div>
+                        <!-- FAQ Item 3 -->
+                        <div class="bg-gray-700 rounded-lg shadow-lg">
+                            <button class="w-full flex justify-between items-center p-6 focus:outline-none faq-question">
+                                <span class="text-xl font-medium text-green-400">Apakah data saya aman?</span>
+                                <i class="fas fa-chevron-down text-green-500 transition-transform duration-300"></i>
+                            </button>
+                            <div class="faq-answer p-6 hidden">
+                                <p class="text-gray-300">
+                                    Kami menjaga keamanan data Anda dengan sistem keamanan terbaik untuk memastikan privasi dan keamanan informasi Anda.
+                                </p>
+                            </div>
+                        </div>
+                        <!-- FAQ Item 4 -->
+                        <div class="bg-gray-700 rounded-lg shadow-lg">
+                            <button class="w-full flex justify-between items-center p-6 focus:outline-none faq-question">
+                                <span class="text-xl font-medium text-green-400">Bagaimana cara menghubungi support?</span>
+                                <i class="fas fa-chevron-down text-green-500 transition-transform duration-300"></i>
+                            </button>
+                            <div class="faq-answer p-6 hidden">
+                                <p class="text-gray-300">
+                                    Anda dapat menghubungi kami melalui halaman Contact Us atau langsung melalui WhatsApp di nomor +62811103542.
+                                </p>
+                            </div>
+                        </div>
+                        <!-- Tambahkan FAQ lainnya sesuai kebutuhan -->
+                    </div>
+                </div>
+            </section>
+
+
+        <!-- Download Content -->
+        <section id="download" class="py-28 px-6 lg:px-12">
+            <div class="container mx-auto text-center">
+                <h2 class="text-4xl font-semibold text-green-500 mb-8 animate-fadeInDown">Download Client KOU-PS</h2>
+                <div class="flex flex-col md:flex-row justify-center items-center space-y-6 md:space-y-0 md:space-x-6">
+                    <button id="copy-host" class="bg-green-500 hover:bg-green-600 text-white px-6 py-4 rounded-full text-lg transition duration-300 flex items-center space-x-2">
+                        <i class="fas fa-copy"></i>
+                        <span>Copy Host</span>
+                    </button>
+                    <a href="assets/files/hosts.txt" download="hosts.txt" class="bg-blue-500 hover:bg-blue-600 text-white px-6 py-4 rounded-full text-lg transition duration-300 flex items-center space-x-2">
+                        <i class="fas fa-download"></i>
+                        <span>Download Host</span>
+                    </a>
+                    <a href="https://objects.githubusercontent.com/github-production-release-asset-2e65be/245713683/d49e769e-b493-4609-a70b-264180ca9d80?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=releaseassetproduction%2F20250115%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20250115T002950Z&X-Amz-Expires=300&X-Amz-Signature=4b466e0dff3fbf751969f2fb9a408ddbc0ea6eb0979e5adaf3a15eb9efed18f1&X-Amz-SignedHeaders=host&response-content-disposition=attachment%3B%20filename%3DPowerTunnel.apk&response-content-type=application%2Fvnd.android.package-archive" class="bg-yellow-500 hover:bg-yellow-600 text-white px-6 py-4 rounded-full text-lg transition duration-300 flex items-center space-x-2">
+                        <i class="fas fa-cloud-download-alt"></i>
+                        <span>Download PowerTunnel</span>
+                    </a>
+                </div>
+                <div class="mt-12">
+                    <h3 class="text-2xl font-semibold text-green-500 mb-4">Preview hosts.txt</h3>
+                    <textarea id="hosts-preview" class="w-full max-w-3xl h-48 bg-gray-700 p-4 rounded text-white overflow-auto" readonly></textarea>
+                    <button id="copy-textarea" class="mt-4 bg-green-500 hover:bg-green-600 text-white px-6 py-3 rounded-full text-lg transition duration-300 flex items-center space-x-2 mx-auto">
+                        <i class="fas fa-clipboard"></i>
+                        <span>Copy to Clipboard</span>
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Call to Action Section -->
+        <section class="py-20 px-6 lg:px-12">
+            <div class="container mx-auto text-center">
+                <h2 class="text-3xl font-semibold text-green-500 mb-4">Ready to Join?</h2>
+                <p class="text-gray-300 mb-8">Bergabunglah sekarang dan rasakan pengalaman bermain Growtopia yang lebih seru dengan KOU-PS!</p>
+                <a href="#download" class="bg-green-500 hover:bg-green-600 text-white px-8 py-4 rounded-full text-lg transition duration-300">
+                    Get Started
+                </a>
+            </div>
+        </section>
+
+        <!-- Footer Section -->
+        <footer class="bg-gray-800 py-6 px-6 lg:px-12">
+            <div class="container mx-auto flex flex-col md:flex-row justify-between items-center">
+                <p class="text-gray-400 mb-4 md:mb-0">&copy; 2025 KOU-PS. All rights reserved.</p>
+                <div class="flex space-x-6">
+                    <a href="https://twitter.com/" target="_blank" class="hover:text-green-500"><i class="fab fa-twitter fa-lg"></i></a>
+                    <a href="https://discord.com/" target="_blank" class="hover:text-green-500"><i class="fab fa-discord fa-lg"></i></a>
+                    <a href="https://instagram.com/" target="_blank" class="hover:text-green-500"><i class="fab fa-instagram fa-lg"></i></a>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <!-- jQuery CDN -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <!-- SweetAlert2 CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <!-- Font Awesome JS (for Icons) -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js"></script>
+    <!-- Custom JS -->
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/download.js"></script>
+</body>
+</html>

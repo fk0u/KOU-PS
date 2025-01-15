@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Server Status - KOU-PS</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- SweetAlert2 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.css" rel="stylesheet">
+    <!-- Font Awesome for Icons -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link href="assets/css/styles.css" rel="stylesheet">
+</head>
+<body class="bg-gray-900 text-white">
+    <!-- Header -->
+    <header class="bg-gray-800 fixed w-full z-40">
+        <div class="container mx-auto flex justify-between items-center p-6">
+            <div class="flex items-center space-x-2">
+                <img src="assets/images/logo.png" alt="KOU-PS Logo" class="w-12 h-12">
+                <span class="text-2xl font-bold text-green-500">KOU-PS</span>
+            </div>
+            <nav>
+                <ul class="hidden md:flex space-x-6 text-lg">
+                    <li><a href="index.html" class="hover:text-green-500">Home</a></li>
+                    <li><a href="#status" class="hover:text-green-500">Server Status</a></li>
+                    <li><a href="download.html" class="hover:text-green-500">Download</a></li>
+                    <li><a href="marketplace.html" class="hover:text-green-500">Marketplace</a></li>
+                    <li><a href="contact-us.html" class="hover:text-green-500">Contact Us</a></li>
+                </ul>
+                <!-- Hamburger Menu -->
+                <div class="md:hidden">
+                    <button id="hamburger" class="text-green-500 focus:outline-none">
+                        <i class="fas fa-bars fa-2x"></i>
+                    </button>
+                </div>
+            </nav>
+        </div>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden bg-gray-700">
+            <ul class="flex flex-col space-y-4 p-4 text-lg">
+                <li><a href="index.html" class="hover:text-green-500">Home</a></li>
+                <li><a href="#status" class="hover:text-green-500">Server Status</a></li>
+                <li><a href="download.html" class="hover:text-green-500">Download</a></li>
+                <li><a href="marketplace.html" class="hover:text-green-500">Marketplace</a></li>
+                <li><a href="contact-us.html" class="hover:text-green-500">Contact Us</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <!-- Server Status Content -->
+    <section id="status" class="pt-32 pb-20 px-6 lg:px-12">
+        <div class="container mx-auto text-center">
+            <h2 class="text-4xl font-semibold text-green-500 mb-8 animate-fadeInDown">Server Status</h2>
+            <div id="server-status" class="bg-gray-700 p-8 rounded-lg shadow-lg inline-block">
+                <div class="flex flex-col items-center">
+                    <i id="status-icon" class="fas fa-spinner fa-spin text-4xl mb-4"></i>
+                    <p id="status-text" class="text-xl text-gray-300">Memuat status server...</p>
+                    <p id="player-count" class="text-lg text-gray-400 mt-2 hidden">Jumlah Pemain Online: <span id="count">0</span></p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 py-6 px-6 lg:px-12">
+        <div class="container mx-auto flex flex-col md:flex-row justify-between items-center">
+            <p class="text-gray-400 mb-4 md:mb-0">&copy; 2025 KOU-PS. All rights reserved.</p>
+            <div class="flex space-x-6">
+                <a href="https://twitter.com/" target="_blank" class="hover:text-green-500"><i class="fab fa-twitter fa-lg"></i></a>
+                <a href="https://discord.com/" target="_blank" class="hover:text-green-500"><i class="fab fa-discord fa-lg"></i></a>
+                <a href="https://instagram.com/" target="_blank" class="hover:text-green-500"><i class="fab fa-instagram fa-lg"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- jQuery CDN -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <!-- SweetAlert2 CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <!-- Font Awesome JS (for Icons) -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js"></script>
+    <!-- Custom JS -->
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/server-status.js"></script>
+</body>
+</html>

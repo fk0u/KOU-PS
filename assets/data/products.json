@@ -1,0 +1,46 @@
+{
+    "products": [
+        {
+            "id": 1,
+            "name": "VIP+ Role",
+            "description": "Paket Gold memberikan akses ke item eksklusif dan fitur premium.",
+            "price": 9.99
+        },
+        {
+            "id": 2,
+            "name": "MOD Role",
+            "description": "Paket Diamond untuk pengalaman bermain yang lebih maksimal dengan bonus ekstra.",
+            "price": 19.99
+        },
+        {
+            "id": 3,
+            "name": "SUPERMOD Role",
+            "description": "Keanggotaan VIP memberikan hak istimewa dan dukungan prioritas.",
+            "price": 29.99
+        },
+        {
+            "id": 4,
+            "name": "DEV Role",
+            "description": "Mega Boost meningkatkan kecepatan bermain Anda secara signifikan.",
+            "price": 14.99
+        },
+        {
+            "id": 5,
+            "name": "SUPERDEV Role",
+            "description": "Dapatkan skins eksklusif yang tidak tersedia di server lain.",
+            "price": 7.99
+        },
+        {
+            "id": 6,
+            "name": "FOUNDER Role",
+            "description": "Tambahkan coins premium ke akun Anda untuk membeli item favorit.",
+            "price": 4.99
+        },
+        {
+            "id": 7,
+            "name": "STAFF Role",
+            "description": "lorem",
+            "price": 4
+        }
+    ]
+}
