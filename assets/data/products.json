@@ -3,44 +3,89 @@
         {
             "id": 1,
             "name": "VIP+ Role",
-            "description": "Paket Gold memberikan akses ke item eksklusif dan fitur premium.",
-            "price": 9.99
+            "description": "Akses eksklusif untuk fitur VIP tingkat lanjutan yang memberikan pengalaman bermain lebih istimewa.",
+            "price": 5000
         },
         {
             "id": 2,
             "name": "MOD Role",
-            "description": "Paket Diamond untuk pengalaman bermain yang lebih maksimal dengan bonus ekstra.",
-            "price": 19.99
+            "description": "Peran moderator yang memberikan kendali tambahan dan hak istimewa dalam komunitas.",
+            "price": 15000
         },
         {
             "id": 3,
-            "name": "SUPERMOD Role",
-            "description": "Keanggotaan VIP memberikan hak istimewa dan dukungan prioritas.",
-            "price": 29.99
+            "name": "SMOD Role",
+            "description": "Super Moderator dengan akses penuh untuk mengelola dan mendukung komunitas secara maksimal.",
+            "price": 25000
         },
         {
             "id": 4,
             "name": "DEV Role",
-            "description": "Mega Boost meningkatkan kecepatan bermain Anda secara signifikan.",
-            "price": 14.99
+            "description": "Peran pengembang dengan hak istimewa untuk berkontribusi langsung pada pengembangan platform.",
+            "price": 45000
         },
         {
             "id": 5,
-            "name": "SUPERDEV Role",
-            "description": "Dapatkan skins eksklusif yang tidak tersedia di server lain.",
-            "price": 7.99
+            "name": "SDEV Role",
+            "description": "Super Developer dengan akses premium untuk menciptakan dampak besar di ekosistem komunitas.",
+            "price": 60000
         },
         {
             "id": 6,
             "name": "FOUNDER Role",
-            "description": "Tambahkan coins premium ke akun Anda untuk membeli item favorit.",
-            "price": 4.99
+            "description": "Status pendiri yang memberikan penghormatan khusus dan akses unik ke fitur platform.",
+            "price": 80000
         },
         {
             "id": 7,
             "name": "STAFF Role",
-            "description": "lorem",
-            "price": 4
+            "description": "Peran staf yang mendukung operasional dan layanan dalam komunitas dengan tanggung jawab tinggi.",
+            "price": 100000
+        },
+        {
+            "id": 8,
+            "name": "OWNER Role",
+            "description": "Kepemilikan penuh atas komunitas dengan semua hak akses dan kontrol tak terbatas.",
+            "price": 200000
+        },
+        {
+            "id": 9,
+            "name": "Legend Title",
+            "description": "Gelar khusus untuk menunjukkan status legendaris dalam komunitas.",
+            "price": 5000
+        },
+        {
+            "id": 10,
+            "name": "DR Title",
+            "description": "Gelar eksklusif yang mencerminkan pencapaian Anda sebagai anggota komunitas.",
+            "price": 5000
+        },
+        {
+            "id": 11,
+            "name": "Level 125",
+            "description": "Naik level instan ke Level 125 untuk mendapatkan akses ke fitur tingkat lanjut.",
+            "price": 5000
+        },
+        {
+            "id": 12,
+            "name": "DL",
+            "description": "DL (Data License) dengan harga terjangkau untuk kebutuhan khusus Anda.",
+            "price": 300
+        },
+        {
+            "id": 13,
+            "name": "BGL",
+            "description": "Big Gem Loot untuk meningkatkan koleksi Anda dengan gem premium.",
+            "price": 3000
+        },
+        {
+            "id": 14,
+            "name": "KGL",
+            "description": "King Gem Loot dengan harga diskon 50% yang memberikan nilai maksimal.",
+            "price": 150000
         }
-    ]
+    ],
+    "discount": "7% for 15-22 January",
+    "payment_methods": "GOPAY, SHOPEEPAY",
+    "note": "QRIS NOT AVAILABLE"
 }
